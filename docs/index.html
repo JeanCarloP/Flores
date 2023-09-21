@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="style.css">
-    <title>Flower</title>
+    <title>Ingrese un Nombre</title>
 </head>
 <body>
-   <script>
-    // Agregar un evento de envío al formulario
-    document.getElementById("nameForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Evitar que se recargue la página
-        var nombre = document.getElementById("nombre").value;
-        
-        // Mostrar el nombre ingresado en la parte inferior
-        var nombreIngresado = document.getElementById("nombreIngresado");
-        nombreIngresado.textContent = "Nombre: " + nombre;
-        nombreIngresado.style.display = "block";
-        
-        // Puedes agregar aquí la lógica para animar el nombre si es necesario
-    });
+
+<h1>Ingrese un Nombre</h1>
+
+<form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
