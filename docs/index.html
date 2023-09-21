@@ -10,11 +10,16 @@
 <body>
 
 <div class="flower">
-    <!-- Agregamos un formulario con un campo de entrada para el nombre -->
-    <form>
+    <!-- Formulario para ingresar el nombre -->
+    <form id="nameForm">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre">
         <button type="submit">Agregar Nombre</button>
+    </form>
+    
+    <!-- Div para mostrar el nombre ingresado -->
+    <div id="nombreIngresado" style="display: none;"></div>
+    
     </form>
     <div class="text-above">De Jean</div>
     <div class="mid">
